@@ -19,10 +19,10 @@
         <?php 
             for($i=0;$i<2;$i++){
                 if($rand==$i){
-                    echo "<img onclick='go()' src='./resources/hallDoor.jpg'>m
+                    echo "<img onclick='go()' src='./resources/hallDoor.jpg'>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 }else{ 
-                    echo "<img onclick='go2()' src='./resources/hallDoor.jpg'>v
+                    echo "<img onclick='go2()' src='./resources/hallDoor.jpg'>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
                 }
             }
@@ -33,8 +33,8 @@
     <script>
 
         function go(){
-            <?php $vidas--;?>
-            window.alert("<?php echo "Te quedan $vidas vidas"?>");
+            document.getElementById("form").action="bosque.php";
+            document.getElementById("form").submit();
         }
         function go2(){
             document.getElementById("form").action="bosque.php";
