@@ -1,0 +1,15 @@
+.carta {
+    border-radius: 5px;
+    width: 80px;
+    height: 135px;
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    font: 16px Arial;
+    margin: 10px;
+    background-color: #FFF;
+}
+
+.mazoUsuario .carta {
+    cursor: pointer;
+}

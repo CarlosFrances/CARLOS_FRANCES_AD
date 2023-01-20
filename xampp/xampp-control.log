@@ -1,0 +1,171 @@
+18:09:00  [main] 	Initializing Control Panel
+18:09:00  [main] 	Windows Version:  Home  64-bit
+18:09:00  [main] 	XAMPP Version: 8.1.6
+18:09:00  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+18:09:00  [main] 	You are not running with administrator rights! This will work for
+18:09:00  [main] 	most application stuff but whenever you do something with services
+18:09:00  [main] 	there will be a security dialogue or things will break! So think 
+18:09:00  [main] 	about running this application with administrator rights!
+18:09:00  [main] 	XAMPP Installation Directory: "c:\xampp\"
+18:09:00  [main] 	Checking for prerequisites
+18:09:01  [main] 	All prerequisites found
+18:09:01  [main] 	Initializing Modules
+18:09:01  [Apache] 	XAMPP Apache is already running on port 80
+18:09:01  [Apache] 	XAMPP Apache is already running on port 443
+18:09:01  [main] 	Starting Check-Timer
+18:09:01  [main] 	Control Panel Ready
+19:53:17  [main] 	Deinitializing Modules
+19:53:17  [main] 	Deinitializing Control Panel
+
+15:28:02  [main] 	Initializing Control Panel
+15:28:02  [main] 	Windows Version:  Home  64-bit
+15:28:02  [main] 	XAMPP Version: 8.1.6
+15:28:02  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+15:28:02  [main] 	You are not running with administrator rights! This will work for
+15:28:02  [main] 	most application stuff but whenever you do something with services
+15:28:02  [main] 	there will be a security dialogue or things will break! So think 
+15:28:02  [main] 	about running this application with administrator rights!
+15:28:02  [main] 	XAMPP Installation Directory: "c:\xampp\"
+15:28:02  [main] 	Checking for prerequisites
+15:28:05  [main] 	All prerequisites found
+15:28:05  [main] 	Initializing Modules
+15:28:05  [Apache] 	XAMPP Apache is already running on port 80
+15:28:05  [Apache] 	XAMPP Apache is already running on port 443
+15:28:05  [main] 	Starting Check-Timer
+15:28:05  [main] 	Control Panel Ready
+20:56:41  [main] 	Deinitializing Modules
+20:56:41  [main] 	Deinitializing Control Panel
+
+17:00:12  [main] 	Initializing Control Panel
+17:00:12  [main] 	Windows Version:  Home  64-bit
+17:00:12  [main] 	XAMPP Version: 8.1.6
+17:00:12  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+17:00:12  [main] 	You are not running with administrator rights! This will work for
+17:00:12  [main] 	most application stuff but whenever you do something with services
+17:00:12  [main] 	there will be a security dialogue or things will break! So think 
+17:00:12  [main] 	about running this application with administrator rights!
+17:00:12  [main] 	XAMPP Installation Directory: "c:\xampp\"
+17:00:12  [main] 	Checking for prerequisites
+17:00:14  [main] 	All prerequisites found
+17:00:14  [main] 	Initializing Modules
+17:00:15  [Apache] 	XAMPP Apache is already running on port 80
+17:00:15  [Apache] 	XAMPP Apache is already running on port 443
+17:00:15  [main] 	Starting Check-Timer
+17:00:15  [main] 	Control Panel Ready
+20:56:40  [main] 	Deinitializing Modules
+20:56:40  [main] 	Deinitializing Control Panel
+
+17:36:28  [main] 	Initializing Control Panel
+17:36:28  [main] 	Windows Version:  Home  64-bit
+17:36:28  [main] 	XAMPP Version: 8.1.6
+17:36:28  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+17:36:28  [main] 	You are not running with administrator rights! This will work for
+17:36:28  [main] 	most application stuff but whenever you do something with services
+17:36:28  [main] 	there will be a security dialogue or things will break! So think 
+17:36:28  [main] 	about running this application with administrator rights!
+17:36:28  [main] 	XAMPP Installation Directory: "c:\xampp\"
+17:36:28  [main] 	Checking for prerequisites
+17:36:31  [main] 	All prerequisites found
+17:36:31  [main] 	Initializing Modules
+17:36:31  [Apache] 	XAMPP Apache is already running on port 80
+17:36:31  [Apache] 	XAMPP Apache is already running on port 443
+17:36:31  [main] 	Starting Check-Timer
+17:36:31  [main] 	Control Panel Ready
+9:49:04  [main] 	Deinitializing Modules
+9:49:04  [main] 	Deinitializing Control Panel
+
+16:57:26  [main] 	Initializing Control Panel
+16:57:26  [main] 	Windows Version:  Home  64-bit
+16:57:26  [main] 	XAMPP Version: 8.1.6
+16:57:26  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+16:57:26  [main] 	You are not running with administrator rights! This will work for
+16:57:26  [main] 	most application stuff but whenever you do something with services
+16:57:26  [main] 	there will be a security dialogue or things will break! So think 
+16:57:26  [main] 	about running this application with administrator rights!
+16:57:26  [main] 	XAMPP Installation Directory: "c:\xampp\"
+16:57:26  [main] 	Checking for prerequisites
+16:57:28  [main] 	All prerequisites found
+16:57:28  [main] 	Initializing Modules
+16:57:28  [Apache] 	XAMPP Apache is already running on port 80
+16:57:28  [Apache] 	XAMPP Apache is already running on port 443
+16:57:28  [main] 	Starting Check-Timer
+16:57:28  [main] 	Control Panel Ready
+18:53:11  [Tomcat] 	Status change detected: running
+18:53:38  [Tomcat] 	Status change detected: stopped
+9:49:04  [main] 	Deinitializing Modules
+9:49:04  [main] 	Deinitializing Control Panel
+
+11:06:42  [main] 	Initializing Control Panel
+11:06:42  [main] 	Windows Version:  Home  64-bit
+11:06:42  [main] 	XAMPP Version: 8.1.6
+11:06:42  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+11:06:42  [main] 	You are not running with administrator rights! This will work for
+11:06:42  [main] 	most application stuff but whenever you do something with services
+11:06:42  [main] 	there will be a security dialogue or things will break! So think 
+11:06:42  [main] 	about running this application with administrator rights!
+11:06:42  [main] 	XAMPP Installation Directory: "c:\xampp\"
+11:06:42  [main] 	Checking for prerequisites
+11:06:46  [main] 	All prerequisites found
+11:06:46  [main] 	Initializing Modules
+11:06:46  [main] 	Starting Check-Timer
+11:06:46  [main] 	Control Panel Ready
+11:06:49  [Apache] 	Attempting to start Apache app...
+11:06:49  [Apache] 	Status change detected: running
+17:46:03  [main] 	Deinitializing Modules
+17:46:03  [main] 	Deinitializing Control Panel
+
+17:19:23  [main] 	Initializing Control Panel
+17:19:23  [main] 	Windows Version:  Home  64-bit
+17:19:23  [main] 	XAMPP Version: 8.1.6
+17:19:23  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+17:19:23  [main] 	You are not running with administrator rights! This will work for
+17:19:23  [main] 	most application stuff but whenever you do something with services
+17:19:23  [main] 	there will be a security dialogue or things will break! So think 
+17:19:23  [main] 	about running this application with administrator rights!
+17:19:23  [main] 	XAMPP Installation Directory: "c:\xampp\"
+17:19:23  [main] 	Checking for prerequisites
+17:19:26  [main] 	All prerequisites found
+17:19:26  [main] 	Initializing Modules
+17:19:26  [Apache] 	XAMPP Apache is already running on port 80
+17:19:26  [Apache] 	XAMPP Apache is already running on port 443
+17:19:26  [main] 	Starting Check-Timer
+17:19:26  [main] 	Control Panel Ready
+11:31:58  [main] 	Deinitializing Modules
+11:31:58  [main] 	Deinitializing Control Panel
+
+17:00:08  [main] 	Initializing Control Panel
+17:00:08  [main] 	Windows Version:  Home  64-bit
+17:00:08  [main] 	XAMPP Version: 8.1.6
+17:00:08  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+17:00:08  [main] 	You are not running with administrator rights! This will work for
+17:00:08  [main] 	most application stuff but whenever you do something with services
+17:00:08  [main] 	there will be a security dialogue or things will break! So think 
+17:00:08  [main] 	about running this application with administrator rights!
+17:00:08  [main] 	XAMPP Installation Directory: "c:\xampp\"
+17:00:08  [main] 	Checking for prerequisites
+17:00:11  [main] 	All prerequisites found
+17:00:11  [main] 	Initializing Modules
+17:00:11  [Apache] 	XAMPP Apache is already running on port 80
+17:00:11  [Apache] 	XAMPP Apache is already running on port 443
+17:00:11  [mysql] 	XAMPP MySQL is already running on port 3306
+17:00:11  [main] 	Starting Check-Timer
+17:00:11  [main] 	Control Panel Ready
+13:08:17  [Apache] 	Status change detected: stopped
+13:08:17  [Apache] 	Error: Apache shutdown unexpectedly.
+13:08:17  [Apache] 	This may be due to a blocked port, missing dependencies, 
+13:08:17  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+13:08:17  [Apache] 	Press the Logs button to view error logs and check
+13:08:17  [Apache] 	the Windows Event Viewer for more clues
+13:08:17  [Apache] 	If you need more help, copy and post this
+13:08:17  [Apache] 	entire log window on the forums
+13:08:17  [mysql] 	Status change detected: stopped
+13:08:17  [mysql] 	Error: MySQL shutdown unexpectedly.
+13:08:17  [mysql] 	This may be due to a blocked port, missing dependencies, 
+13:08:17  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+13:08:17  [mysql] 	Press the Logs button to view error logs and check
+13:08:17  [mysql] 	the Windows Event Viewer for more clues
+13:08:17  [mysql] 	If you need more help, copy and post this
+13:08:17  [mysql] 	entire log window on the forums
+13:08:18  [main] 	Deinitializing Modules
+13:08:18  [main] 	Deinitializing Control Panel
+

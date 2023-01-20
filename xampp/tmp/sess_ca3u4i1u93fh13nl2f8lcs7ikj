@@ -1,0 +1,81 @@
+ PMA_token |s:32:"3028345763244d652d3b553e43753749"; HMAC_secret |s:16:"e\ck1TJbh8/}d&d3";browser_access_time|a:2:{s:7:"default";i:1673367408;s:36:"43e09f59-13fa-166c-091d-85b92160b16f";i:1673287194;}relation|a:1:{i:1;a:41:{s:7:"version";s:5:"5.2.0";s:4:"user";s:4:"root";s:2:"db";s:10:"phpmyadmin";s:8:"bookmark";s:13:"pma__bookmark";s:15:"central_columns";s:20:"pma__central_columns";s:11:"column_info";s:16:"pma__column_info";s:17:"designer_settings";s:22:"pma__designer_settings";s:16:"export_templates";s:21:"pma__export_templates";s:8:"favorite";s:13:"pma__favorite";s:7:"history";s:12:"pma__history";s:16:"navigationhiding";s:21:"pma__navigationhiding";s:9:"pdf_pages";s:14:"pma__pdf_pages";s:6:"recent";s:11:"pma__recent";s:8:"relation";s:13:"pma__relation";s:13:"savedsearches";s:18:"pma__savedsearches";s:12:"table_coords";s:17:"pma__table_coords";s:10:"table_info";s:15:"pma__table_info";s:13:"table_uiprefs";s:18:"pma__table_uiprefs";s:8:"tracking";s:13:"pma__tracking";s:10:"userconfig";s:15:"pma__userconfig";s:10:"usergroups";s:15:"pma__usergroups";s:5:"users";s:10:"pma__users";s:12:"bookmarkwork";b:1;s:8:"mimework";b:1;s:18:"centralcolumnswork";b:1;s:8:"commwork";b:1;s:9:"menuswork";b:1;s:20:"designersettingswork";b:1;s:11:"displaywork";b:1;s:19:"exporttemplateswork";b:1;s:12:"favoritework";b:1;s:7:"navwork";b:1;s:7:"pdfwork";b:1;s:10:"recentwork";b:1;s:7:"relwork";b:1;s:17:"savedsearcheswork";b:1;s:11:"historywork";b:1;s:12:"trackingwork";b:1;s:11:"uiprefswork";b:1;s:14:"userconfigwork";b:1;s:8:"allworks";b:1;}}tmpval|a:14:{s:14:"favoriteTables";a:1:{i:1;a:0:{}}s:12:"recentTables";a:1:{i:1;a:6:{i:0;a:2:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:20:"hortalizas_fruterias";}i:1;a:2:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:9:"fruterias";}i:2;a:2:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:10:"hortalizas";}i:3;a:2:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:18:"verduras_fruterias";}i:4;a:2:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:8:"verduras";}i:5;a:2:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:8:"VERDURAS";}}}s:18:"table_limit_offset";i:0;s:21:"table_limit_offset_db";s:10:"db_fruitis";s:5:"query";a:10:{s:32:"ab9e5b48e44625b361407c1dfdbe3dd1";a:8:{s:3:"sql";s:159:"--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `FRUTERIAS`
+--
+ALTER TABLE `FRUTERIAS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"572fb3db2f8fe07af63e17af45073618";a:8:{s:3:"sql";s:118:"--
+-- AUTO_INCREMENT for table `HORTALIZAS`
+--
+ALTER TABLE `HORTALIZAS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"2bc22c59829a55b8759a515b9fb95a91";a:8:{s:3:"sql";s:138:"--
+-- AUTO_INCREMENT for table `HORTALIZAS_FRUTERIAS`
+--
+ALTER TABLE `HORTALIZAS_FRUTERIAS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"7ece9f5c6683b285ea11cc6299c544ee";a:8:{s:3:"sql";s:114:"--
+-- AUTO_INCREMENT for table `VERDURAS`
+--
+ALTER TABLE `VERDURAS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"5d17551466e49ce4491cc8fe98006e30";a:8:{s:3:"sql";s:134:"--
+-- AUTO_INCREMENT for table `VERDURAS_FRUTERIAS`
+--
+ALTER TABLE `VERDURAS_FRUTERIAS`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"cda9b99793ed4cb4243d4bfc858a02d0";a:8:{s:3:"sql";s:342:"--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `HORTALIZAS_FRUTERIAS`
+--
+ALTER TABLE `HORTALIZAS_FRUTERIAS`
+  ADD CONSTRAINT `HORTALIZAS_FRUTERIAS_ibfk_1` FOREIGN KEY (`ID_HORTALIZA`) REFERENCES `HORTALIZAS` (`ID`),
+  ADD CONSTRAINT `HORTALIZAS_FRUTERIAS_ibfk_2` FOREIGN KEY (`ID_FRUTERIA`) REFERENCES `FRUTERIAS` (`ID`);";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"e7f634d95e35f7234cd4814deec73421";a:8:{s:3:"sql";s:290:"--
+-- Constraints for table `VERDURAS_FRUTERIAS`
+--
+ALTER TABLE `VERDURAS_FRUTERIAS`
+  ADD CONSTRAINT `VERDURAS_FRUTERIAS_ibfk_1` FOREIGN KEY (`ID_VERDURA`) REFERENCES `VERDURAS` (`ID`),
+  ADD CONSTRAINT `VERDURAS_FRUTERIAS_ibfk_2` FOREIGN KEY (`ID_FRUTERIA`) REFERENCES `FRUTERIAS` (`ID`);";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"6ce6d91ffac1c3198f657c64bcfdc127";a:8:{s:3:"sql";s:63:"/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"5f009c29f3eba80eebb5fa0e1637d82d";a:8:{s:3:"sql";s:65:"/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}s:32:"ddc9d6fe44da8cb887dd72e40e661ce5";a:8:{s:3:"sql";s:63:"/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;";s:12:"repeat_cells";i:100;s:8:"max_rows";i:25;s:3:"pos";i:0;s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;}}s:6:"pftext";s:1:"P";s:18:"relational_display";s:1:"K";s:9:"geoOption";s:4:"GEOM";s:14:"display_binary";b:1;s:12:"display_blob";b:0;s:19:"hide_transformation";b:0;s:3:"pos";i:0;s:8:"max_rows";i:25;s:12:"repeat_cells";i:100;}two_factor_check|b:1;cache|a:3:{s:8:"server_1";a:4:{s:15:"userprefs_mtime";i:1673367401;s:14:"userprefs_type";s:2:"db";s:12:"config_mtime";i:1447170388;s:9:"userprefs";a:3:{s:7:"Console";a:1:{s:4:"Mode";s:8:"collapse";}s:4:"lang";s:2:"es";s:12:"ThemeDefault";s:8:"pmahomme";}}s:13:"server_1_root";a:17:{s:17:"is_create_db_priv";b:1;s:14:"is_reload_priv";b:1;s:12:"db_to_create";s:0:"";s:30:"dbs_where_create_table_allowed";a:1:{i:0;s:1:"*";}s:11:"dbs_to_test";b:0;s:9:"proc_priv";b:1;s:10:"table_priv";b:1;s:8:"col_priv";b:1;s:7:"db_priv";b:1;s:11:"binary_logs";a:0:{}s:18:"menu-levels-server";a:13:{s:9:"databases";s:14:"Bases de datos";s:3:"sql";s:3:"SQL";s:6:"status";s:13:"Estado actual";s:6:"rights";s:8:"Usuarios";s:6:"export";s:8:"Exportar";s:6:"import";s:8:"Importar";s:8:"settings";s:14:"Configuración";s:6:"binlog";s:16:"Registro binario";s:11:"replication";s:12:"Replicación";s:4:"vars";s:9:"Variables";s:7:"charset";s:20:"Juegos de caracteres";s:7:"plugins";s:12:"Complementos";s:6:"engine";s:7:"Motores";}s:14:"menu-levels-db";a:14:{s:9:"structure";s:10:"Estructura";s:3:"sql";s:3:"SQL";s:6:"search";s:6:"Buscar";s:5:"query";s:20:"Generar una consulta";s:6:"export";s:8:"Exportar";s:6:"import";s:8:"Importar";s:9:"operation";s:11:"Operaciones";s:10:"privileges";s:11:"Privilegios";s:8:"routines";s:7:"Rutinas";s:6:"events";s:7:"Eventos";s:8:"triggers";s:12:"Disparadores";s:8:"tracking";s:11:"Seguimiento";s:8:"designer";s:10:"Diseñador";s:15:"central_columns";s:18:"Columnas centrales";}s:17:"menu-levels-table";a:11:{s:6:"browse";s:8:"Examinar";s:9:"structure";s:10:"Estructura";s:3:"sql";s:3:"SQL";s:6:"search";s:6:"Buscar";s:6:"insert";s:8:"Insertar";s:6:"export";s:8:"Exportar";s:6:"import";s:8:"Importar";s:10:"privileges";s:11:"Privilegios";s:9:"operation";s:11:"Operaciones";s:8:"tracking";s:11:"Seguimiento";s:8:"triggers";s:12:"Disparadores";}s:19:"profiling_supported";b:1;s:12:"is_superuser";b:1;s:14:"mysql_cur_user";s:14:"root@localhost";s:12:"is_grantuser";b:1;}s:13:"version_check";a:2:{s:8:"response";s:420:"{
+    "date": "2022-05-11", 
+    "version": "5.2.0", 
+    "releases": [
+        {
+            "date": "2022-05-11", 
+            "php_versions": ">=7.2,<8.1", 
+            "version": "5.2.0", 
+            "mysql_versions": ">=5.5"
+        }, 
+        {
+            "date": "2022-02-11", 
+            "php_versions": ">=5.5,<8.0", 
+            "version": "4.9.10", 
+            "mysql_versions": ">=5.5"
+        }
+    ]
+}";s:9:"timestamp";i:1673366587;}}git_location|N;is_git_revision|b:0;ConfigFile1|a:2:{s:7:"Console";a:1:{s:4:"Mode";s:8:"collapse";}s:7:"Servers";a:1:{i:1;a:2:{s:7:"only_db";s:0:"";s:7:"hide_db";s:0:"";}}}debug|a:0:{}flashMessages|a:0:{}sql_history|a:16:{i:0;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:8:"verduras";s:8:"sqlquery";s:198:"CREATE TABLE `db_fruitis`.`verduras` (`ID` INT NOT NULL AUTO_INCREMENT , `NOMBRE` VARCHAR(20) NOT NULL , `TIPO` TINYINT NOT NULL , `COLOR` VARCHAR(20) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;";}i:1;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:10:"hortalizas";s:8:"sqlquery";s:215:"CREATE TABLE `db_fruitis`.`hortalizas` (`ID` INT NOT NULL AUTO_INCREMENT , `NOMBRE` VARCHAR(20) NOT NULL , `COLOR` VARCHAR(20) NOT NULL DEFAULT 'verde' , `TAM` TINYINT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;";}i:2;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:9:"fruterias";s:8:"sqlquery";s:181:"CREATE TABLE `db_fruitis`.`fruterias` (`ID` INT NOT NULL AUTO_INCREMENT , `NOMBRE` VARCHAR(20) NOT NULL , `LOCALIZACION` VARCHAR(100) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;";}i:3;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:18:"verduras_fruterias";s:8:"sqlquery";s:239:"CREATE TABLE `db_fruitis`.`verduras_fruterias` (`ID` INT NOT NULL AUTO_INCREMENT , `ID_VERDURA` INT NOT NULL , `ID_FRUTERIA` INT NOT NULL , `CANTIDAD` INT NOT NULL , PRIMARY KEY (`ID`), INDEX (`ID_VERDURA`, `ID_FRUTERIA`)) ENGINE = InnoDB;";}i:4;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:10:"hortalizas";s:8:"sqlquery";s:26:"SELECT * FROM `hortalizas`";}i:5;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:20:"hortalizas_fruterias";s:8:"sqlquery";s:180:"CREATE TABLE `db_fruitis`.`hortalizas_fruterias` (`ID` INT NOT NULL AUTO_INCREMENT , `ID_HORTALIZA` INT NOT NULL , `ID_FRUTERIA` INT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;";}i:6;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:20:"hortalizas_fruterias";s:8:"sqlquery";s:36:"SELECT * FROM `hortalizas_fruterias`";}i:7;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:10:"hortalizas";s:8:"sqlquery";s:26:"SELECT * FROM `hortalizas`";}i:8;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:20:"hortalizas_fruterias";s:8:"sqlquery";s:36:"SELECT * FROM `hortalizas_fruterias`";}i:9;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:20:"hortalizas_fruterias";s:8:"sqlquery";s:36:"SELECT * FROM `hortalizas_fruterias`";}i:10;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:9:"fruterias";s:8:"sqlquery";s:25:"SELECT * FROM `fruterias`";}i:11;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:9:"fruterias";s:8:"sqlquery";s:25:"SELECT * FROM `fruterias`";}i:12;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:0:"";s:8:"sqlquery";s:124:"--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `FRUTERIAS`
+--
+ALTER TABLE `FRUTERIAS`
+  ADD PRIMARY KEY (`ID`);";}i:13;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:20:"hortalizas_fruterias";s:8:"sqlquery";s:36:"SELECT * FROM `hortalizas_fruterias`";}i:14;a:3:{s:2:"db";s:0:"";s:5:"table";s:0:"";s:8:"sqlquery";s:317:"--
+-- Database: `DB_FRUITIS`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `FRUTERIAS`
+--
+
+CREATE TABLE IF NOT EXISTS `FRUTERIAS` (
+  `ID` int(11) NOT NULL,
+  `NOMBRE` varchar(20) NOT NULL,
+  `LOCALIZACION` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;";}i:15;a:3:{s:2:"db";s:10:"db_fruitis";s:5:"table";s:0:"";s:8:"sqlquery";s:63:"/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;";}}is_multi_query|b:1;Import_message|a:2:{s:7:"message";s:213:"<div class="alert alert-success" role="alert">
+  <img src="themes/dot.gif" title="" alt="" class="icon ic_s_success"> <em>Importación ejecutada exitosamente, 26 consultas ejecutadas.</em> (DB_FRUITIS.sql)
+</div>
+";s:11:"go_back_url";s:46:"index.php?route=/database/import&db=db_fruitis";}__upload_status|a:1:{s:7:"handler";s:47:"PhpMyAdmin\Plugins\Import\Upload\UploadNoplugin";}errors|a:0:{}
