@@ -111,5 +111,24 @@ function getAllHortalizasFromTamColor($conDb, $tam, $color)
   return $vectorTotal;
 }
 
+function modificarHortalizaFromTamAndColor($conDb, $tam,$color,$nombre)
+{
+  $result = 0;
+  try
+  {
+    $sql = "UPDATE HORTALIZAS SET NOMBRE=:nombre WHERE COLOR=:color AND TAM=:tam";
+    $stmt = $conDb->prepare($sql);
+    $stmt->bindParam(":nombre", $nombre, PDO::PARAM_STR);
+    $stmt->bindParam(":color", $color, PDO::PARAM_STR);
+    $stmt->bindParam(":tam", $tam, PDO::PARAM_STR);
+    $stmt->execute();
+    $result = $stmt->rowCount();
+   }
+  catch (PDOException $ex)
+  {
+    echo ("Error en modificarHortalizaFromTamAndColor".$ex->getMessage());
+  }
+  return $result;
+}
 
 ?>
