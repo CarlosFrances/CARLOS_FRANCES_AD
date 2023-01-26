@@ -111,6 +111,8 @@ function getAllHortalizasFromTamColor($conDb, $tam, $color)
   return $vectorTotal;
 }
 
+//Update
+
 function modificarHortalizaFromTamAndColor($conDb, $tam,$color,$nombre)
 {
   $result = 0;
@@ -131,4 +133,35 @@ function modificarHortalizaFromTamAndColor($conDb, $tam,$color,$nombre)
   return $result;
 }
 
+//Insert
+function insertarHortaliza($conDB,$nombre,$color,$tam){
+  try{
+    $sql = "INSERT INTO hortalizas(NOMBRE, COLOR, TAM) VALUES (:NOMBRE,:COLOR,:TAM)";
+    $stmt = $conDB->prepare($sql);
+    $stmt->bindParam(":NOMBRE", $nombre);
+    $stmt->bindParam(":COLOR", $color);
+    $stmt->bindParam(":TAM", $tam);
+    $stmt->execute();
+   }
+  catch (PDOException $ex){
+    echo ("Error en insertarHortaliza".$ex->getMessage());
+  }
+
+  return $conDB->lastInsertId();
+}
+
+//delete
+
+function deleteHortaliza($conDB,$id){
+  try{
+    $sql = "DELETE FROM hortalizas WHERE ID=:ID";
+    $stmt = $conDB->prepare($sql);
+    $stmt->bindParam(":ID", $id);
+    $stmt->execute();
+   }
+  catch (PDOException $ex){
+    echo ("Error en deleteHortaliza".$ex->getMessage());
+  }
+  //return $conDB->$id;
+}
 ?>
