@@ -2,6 +2,17 @@
 
     $mensaje = null;
 
+    try {
+        $conexion = new PDO("mysql:host=localhost;dbname=rankingJuego", "root", "");
+        $conexion -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch(PDOException $error){
+        $conexion = null;
+    }
+    
+    $comando = $conexion -> prepare("SELECT nombre FROM mazos");
+    $comando -> execute();
+    $resultado = $comando -> fetchAll(PDO::FETCH_ASSOC);
+    
 ?>
 
 <!DOCTYPE html>
