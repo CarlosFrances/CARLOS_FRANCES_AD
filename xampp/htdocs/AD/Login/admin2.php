@@ -54,7 +54,7 @@ $usuarios = execute_query($conexion, "SELECT * FROM usuarios");
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Admin1</title>
+    <title>Admin2</title>
     <meta charset="UTF-8">
     
 
@@ -150,7 +150,7 @@ $usuarios = execute_query($conexion, "SELECT * FROM usuarios");
         <button name="bBorrar" class="btn btn-danger">
           Borrar
         </button>
-        <a name="bAdmin2" href="admin2.php" class="btn btn-success">Admin2</a>
+        <a name="bAdmin1" href="admin1.php" class="btn btn-success">Admin1</a>
       </form>
     </div>
   </body>
