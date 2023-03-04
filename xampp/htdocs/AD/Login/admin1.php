@@ -1,8 +1,8 @@
 <?php
 session_start();
-
-require_once("header.php");
 require("dbutils.php");
+require_once("header.php");
+
 
 $conexion  = conectarDB();
 
@@ -11,19 +11,23 @@ $accionActualizar = 0;
 $accionBorrar = 0;
 if (isset($_POST['bActualizar']))
 {
-  $accionActualizar = 1;
+  $accionActualizar = 3;
   foreach ($_POST["usuarios"] as $usuI => $aNombreClave)
   {
-    try
-    {
-      execute_query($conexion, "UPDATE usuarios SET nombre=:NOMBRE,clave=:CLAVE WHERE usuario=:USUARIO",
-                 array(":USUARIO" => $usuI, ":NOMBRE" => $aNombreClave[0], ":CLAVE" =>$aNombreClave[1]),"PDO::FETCH_ASSOC",false);
+    if(isset($aNombreClave[2])){
+      $accionActualizar=1;
+      try
+      {
+        execute_query($conexion, "UPDATE usuarios SET nombre=:NOMBRE,clave=:CLAVE WHERE usuario=:USUARIO",
+                  array(":USUARIO" => $usuI, ":NOMBRE" => $aNombreClave[0], ":CLAVE" =>$aNombreClave[1]),"PDO::FETCH_ASSOC",false);
+      }
+      catch (Exception $e)
+      {
+        $accionActualizar = 2; 
+      }
     }
-    catch (Exception $e)
-    {
-      $accionActualizar = 2;
-    }
-    }
+    
+  }
 }
 else if (isset($_POST['bBorrar']))
 {
@@ -145,7 +149,7 @@ $usuarios = execute_query($conexion, "SELECT * FROM usuarios");
         </tfoot>
         </table>
         <button name="bActualizar" class="btn btn-primary">
-          Actualizar
+          Actualizar+IVA
         </button>
         <button name="bBorrar" class="btn btn-danger">
           Borrar

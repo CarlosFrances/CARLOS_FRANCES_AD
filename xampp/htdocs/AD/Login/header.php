@@ -6,8 +6,15 @@ if(!isset($_SESSION['userApp'])){
 
 // set tiempo expiración
 // código, properties o bd
-//leer minutos expirar de base de datos
-$minutosExpirar = 0.2;
+ $conexion = conectarDB();
+  //$fila = getUserPassword($conex,$usuario,md5($password));
+  $nombreTimeOut = "TIMEOUT_SESSION";
+  $fila = execute_query(
+    $conexion,
+    "SELECT * FROM propiedades WHERE nombre=:nombre",
+    array(":nombre" => $nombreTimeOut)); 
+$minutosExpirar = $fila[0]['VALOR'];
+echo "minutos:".$minutosExpirar;
 if (isset($_SESSION["tiempo_ultimo_submit"]))
 {
   $segundosInactivo = time() - $_SESSION["tiempo_ultimo_submit"];

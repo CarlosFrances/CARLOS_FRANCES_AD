@@ -1,8 +1,8 @@
 <?php
 session_start();
-
-require_once("header.php");
 require("dbutils.php");
+require_once("header.php");
+
 
 $conexion  = conectarDB();
 
