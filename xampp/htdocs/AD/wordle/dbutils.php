@@ -26,7 +26,7 @@ function palabraAleatoria($palabras)
 
   $aleatorio = random_int(0, $cantidadPalabras - 1);
 
-  return $palabras[$aleatorio];
+  return $palabras[$aleatorio]["palabra"];
 }
 
 ?>
