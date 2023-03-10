@@ -21,19 +21,53 @@
 
     $conDB = conectarDB();
 
-    $palabras = execute_query($conDB, "select * from palabras");
+    session_start();
 
-    $palabra = palabraAleatoria($palabras);
-    $palabraPartida = str_split($palabra);
-    $contador = 0;
 
-    echo "<center style='margin-top:15%;'><form method='POST'>";
-    foreach ($palabraPartida as $character) {
-        echo "<input maxlength='1' id='input_" . $contador . "' type='text' class='cajita'></div>";
-        $contador++;
+
+    if (isset($_POST["input_1"])) {
+
+        $palabraIntroducida = array();
+        for ($i = 0; $i < $_SESSION["contador"]; $i++) {
+            $palabraIntroducida . array_push($_POST["input_" . $i . ""]);
+        }
+
+        $_SESSION["historial"] . array_push($_POST[""]);
+
+        $palabraPartida = $_SESSION["palabraPartida"];
+        $contador = 0;
+        $historial = $_SESSION["historial"];
+        var_export($historial);
+        echo "<center style='margin-top:15%;'><form method='POST'>";
+        foreach ($palabraPartida as $character) {
+            echo "<input maxlength='1' id='input_" . $contador . "' name='input_" . $contador . "' type='text' class='cajita'></div>";
+            $contador++;
+        }
+
+        echo "<button class='btn btn-info'>GO</button></form></center>";
+
+    } else {
+        $_SESSION["iteraciones"] = 0;
+
+        $palabras = execute_query($conDB, "select * from palabras");
+
+        $palabra = palabraAleatoria($palabras);
+        $palabraPartida = str_split($palabra);
+        $_SESSION["palabraPartida"] = $palabraPartida;
+        $contador = 0;
+        $_SESSION["historial"] = array();
+
+        echo "<center style='margin-top:15%;'><form method='POST'>";
+        foreach ($palabraPartida as $character) {
+            echo "<input maxlength='1' id='input_" . $contador . "' name='input_" . $contador . "' type='text' class='cajita'></div>";
+            $contador++;
+        }
+
+        echo "<button class='btn btn-info'>GO</button></form></center>";
+
+        $_SESSION["contador"] = $contador;
+
     }
-
-    echo "<button class='btn btn-info'>GO</button></form></center>";
 
     ?>
 
