@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <?php
-$palabra = "guapo";
 $aInputs = array();
 
 
@@ -22,64 +21,70 @@ if (isset($_POST["boton"])) {
 
     $_SESSION["primeraVez"] = false;
 
-    for ($i = 0; $i < strlen($palabra); $i++) {
+    for ($i = 0; $i < strlen($_SESSION["palabra2"]); $i++) {
         $_SESSION["historial"][$_SESSION["intentos"]][$i] = $_POST["letra" . strval($i) . ""];
 
     }
 
     $_SESSION["intentos"]++;
 
-    for ($i = 0; $i < strlen($palabra); $i++) {
-        if ($palabra[$i] == $_POST["letra" . $i]) {
+    for ($i = 0; $i < strlen($_SESSION["palabra2"]); $i++) {
+        if ($_SESSION["palabra2"][$i] == $_POST["letra" . $i]) {
             $aInputs[$i] = "#0000ffdd";
         }
     }
 
 } else {
     session_start();
+    require_once("dbutils.php");
+
+    $conDB = conectarDB();
+    $palabras = execute_query($conDB, "select * from palabras");
+
+    $palabra = palabraAleatoria($palabras);
     $_SESSION["primeraVez"] = true;
     $_SESSION["historial"] = array();
     $_SESSION["intentos"] = 0;
-    $_SESSION["palabra"] = "";
+    $_SESSION["palabra2"] = $palabra;
+    $_SESSION["caracteresAcertados"] = array();
 }
 ?>
 
 <body background="./assets/background_juego_2.jpg" style="background-size:cover;background-repeat:no-repeat;">
-    <form action="wordle.php" method="post">
+    <form action="wurdle.php" method="post">
         <center>
             <img src="./assets/WURDLE.png" style='display:block;margin-top:5%;margin-bottom:3%;' />
             <?php
 
             // Sacar por pantalla todos los resultados anteriores
             if ($_SESSION["intentos"] > 0) {
-                for ($i = 0; $i < strlen($palabra); $i++) {
+                for ($i = 0; $i < strlen($_SESSION["palabra2"]); $i++) {
                     $_SESSION["palabra"] = $_SESSION["palabra"] . $_POST["letra" . $i];
                 }
-                if ($_SESSION["palabra"] == $palabra) {
-                    echo "<h1 style='font-family:Common Pixel;'>ENHORABUENA DE LA BUENA!!!&nbsp;&nbsp; INTENTOS: " . strval($_SESSION["intentos"]) . "</h1> ";
-                    echo "<a href='wordle.php'<button style='font-family:Common Pixel;margin-top:4%;' class='btn btn-success'>VOLVER A JUGAR</button></div></a>";
+                if ($_SESSION["palabra"] == $_SESSION["palabra2"]) {
+                    echo "<h1 style='font-family:Common Pixel;'>ENHORABUENA DE LA BUENA!!! la palabra era " . $_SESSION["palabra2"] . "</h1>";
+                    echo "<h2 style='margin-top:4%;font-family:Common Pixel'>INTENTOS: " . strval($_SESSION["intentos"]) . "</h2> ";
+                    echo "<a href='wurdle.php'<button style='font-family:Common Pixel;margin-top:4%;' class='btn btn-success'>VOLVER A JUGAR</button></div></a>";
                     exit;
                 }
                 $_SESSION["palabra"] = "";
                 $_SESSION["caracteresAcertados"] = array();
                 for ($i = 0; $i < $_SESSION["intentos"]; $i++) {
                     echo "<div class='row' style='margin-top:2%;display:block;'>";
-                    for ($j = 0; $j < strlen($palabra); $j++) {
+                    for ($j = 0; $j < strlen($_SESSION["palabra2"]); $j++) {
 
                         $color = "#ff0000dd";
 
                         $letraActual = $_SESSION["historial"][$i][strval($j)];
 
-                        $key = array_search($letraActual, str_split($palabra));
+                        $key = array_search($letraActual, str_split($_SESSION["palabra2"]));
 
-                        echo $palabra[$i];
-                        echo $_SESSION["historial"][$i][$j];
-                        if ($palabra[$j] == $_SESSION["historial"][$i][$j]) {
+                        if ($_SESSION["palabra2"][$j] == $_SESSION["historial"][$i][$j]) {
                             $color = "#0000ffdd";
                             array_push($_SESSION["caracteresAcertados"], $j);
                         } else if (
                             str_contains(
-                                $palabra,
+                                $_SESSION["palabra2"],
                                 $_SESSION["historial"][$i][$j]
                             )
                         ) {
@@ -119,24 +124,24 @@ if (isset($_POST["boton"])) {
             }
 
             echo "<div style='margin-top:2%;'>";
-            for ($i = 0; $i < strlen($palabra); $i++) {
+            for ($i = 0; $i < strlen($_SESSION["palabra2"]); $i++) {
                 $color = (isset($aInputs[$i])) ? $aInputs[$i] : "white";
                 $valor = (isset($_POST["letra" . $i])) ? $_POST["letra" . $i] : "";
                 if (in_array($i, $_SESSION["caracteresAcertados"])) {
                     echo '<input type="text" autocomplete="off" maxlength="1" class="cajita" id="input' . $i . '" name="letra' . $i . '" value="' . $valor . '" style="background-color:' . $color . '"/>';
                     echo '<script>let input' . $i . '=document.querySelector("#input' . $i . '");</script>';
                 } else {
-                    echo '<input type="text" autocomplete="off" maxlength="1" class="cajita" id="input' . $i . '" name="letra' . $i . '"style="background-color:' . $color . '"/>';
+                    echo '<input type="text"  autocomplete="off" maxlength="1" class="cajita" id="input' . $i . '" name="letra' . $i . '"style="background-color:' . $color . '"/>';
                     echo '<script>let input' . $i . '=document.querySelector("#input' . $i . '");</script>';
                 }
 
             }
             echo "</div><script>input0.focus()</script>";
             echo "<div style='margin-top:5%;display:inline-block;'><h1 style='float:right;font-family:Common Pixel;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTENTOS: " . $_SESSION["intentos"] . "</h1>";
-            echo "<button style='float:right;font-family:Common Pixel;' class='btn btn-primary' name='boton' id='input" . strlen($palabra) . "'>GO</button></div>";
+            echo "<button style='float:right;font-family:Common Pixel;' class='btn btn-primary' name='boton' id='input" . strlen($_SESSION["palabra2"]) . "'>GO</button></div>";
 
 
-            for ($i = 0; $i < strlen($palabra); $i++) {
+            for ($i = 0; $i < strlen($_SESSION["palabra2"]); $i++) {
                 echo '<script>
                     input' . $i . '.addEventListener("input", () => {
                         if (input' . $i . '.value.length > 0) {
